@@ -8,3 +8,4 @@ middleName = "Luis"; // and then we can assign value to it//
 
 console.log(firstName);
 console.log(middleName);
+
