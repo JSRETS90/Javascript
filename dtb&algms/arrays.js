@@ -9,6 +9,6 @@ numeros.push(6, 7, 8);
 
 console.log(numeros);
 
-console.log(numeros.length);
+console.log(numeros.length);/* using ".length" we can see the number of items in the array */
 
 console.log(numeros[6]);
