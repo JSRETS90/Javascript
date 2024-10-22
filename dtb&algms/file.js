@@ -16,3 +16,12 @@ console.log(numbers);/*[ 1, 2, 4, 8, 16 ] is the result after adding "[4]" with 
 numbers.push(32);
 
 console.log(numbers);
+
+numbers.unshift(0);/* using ".unshift" we can add an item at the start of the array*/
+
+console.log(numbers);/* a 0 is now visible in the array*/
+
+let lastNumber = numbers.pop();
+
+console.log(numbers);
+console.log(lastNumber);
