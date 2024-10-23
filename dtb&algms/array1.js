@@ -24,9 +24,15 @@ console.log(numbers);/* a 0 is now visible in the array*/
 let lastNumber = numbers.pop();/* we can take the las value and store it in a new variable called "lastNumber" using the method " .pop() " which grabs the last item form the array */ 
 
 console.log(numbers);/*here we see the array without the last item [32]  */
+
 console.log(lastNumber); /**32 is shown */
 
 let firstNumber = numbers.shift();/**same as with .pop(), we can take the first item in the array with ".shift()", we'll store the value in a variable called firstNumber */
 
 console.log(numbers);/*here we see the array without the last item [32]  */
+
 console.log(firstNumber);/**0 is shown */
+
+numbers.splice(4, 1); /**to remove an specific item, we use the ".splice()" method, first we need to specify the index of the item, in this case will be (4), then we specify the number of items, in this case only (1),  */
+
+console.log(numbers);/** with these we remove the 16 and the array is back to its original 4 values. */
