@@ -1,9 +1,9 @@
 let list = [
-    'milk',
-    'eggs',
-    'butter',
-    'bacon',
-    'juice'
+    {text: 'milk', cost: 4, need: false },
+    {text: 'eggs', cost: 10, need: true },
+    {text: 'butter', cost: 5, need: false },
+    {text: 'bread', cost: 3, need: true },
+    {text: 'bacon', cost: 12, need: true }
 ];
 
 /*for (init; con; incre) {
@@ -11,10 +11,17 @@ let list = [
 }*/
 
 let html = '';
+let total = 0;
 
 for (let index = 0; index < list.length; index++) {
-    html += `<li>${list[index]}</li>`;
-}
+    let item = list[index];
+
+        if (item.need) {
+        html += `<li>${item.text}</li>`;
+        total += item.cost;
+     }      
+    }
 
 
 document.getElementById('list').innerHTML = html;
+document.getElementById('cost').innerHTML = `$${total}`;
